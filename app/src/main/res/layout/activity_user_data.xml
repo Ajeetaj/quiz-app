@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context=".UserData">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginBottom="10dp"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please enter the Details"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/firstP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:background="@drawable/edt_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter First Player Name"/>
+            <EditText
+                android:id="@+id/secondP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/edt_bg"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Enter Second Player Name"/>
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
